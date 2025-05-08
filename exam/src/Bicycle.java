@@ -36,10 +36,11 @@ public class Bicycle extends Vehicle{
 
     @Override
     public String move(int distance){
-        this.mileage = this.mileage + Math.abs(distance);
-        if(this.mileage > 0){
+        int mileage = this.getMileage() + Math.abs(distance);
+        this.setMileage(mileage);
+        if(distance > 0){
             return "Bicycle is moving forward";
-        }else if(this.mileage < 0){
+        }else if(distance < 0){
             return "Bicycle is moving backward";
         }
         return "Bicycle is stopped.";

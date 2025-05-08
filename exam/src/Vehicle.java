@@ -10,22 +10,9 @@ public abstract class Vehicle {
     private Registration registration;
     private String model;
     private String brand;
-    protected int mileage;
+    private int mileage;
 
-    public Vehicle(Person mainOwner, Registration registration, String model, String brand, int mileage) {
-        setModel(model);
-        setMainOwner(mainOwner);
-        setRegistration(registration);
-        setBrand(brand);
-        setMileage(mileage);
-    }
-
-    public Vehicle(Person mainOwner, String model, String brand, int mileage) {
-        setModel(model);
-        setMainOwner(mainOwner);
-        setBrand(brand);
-        setMileage(mileage);
-    }
+    
 
     public Vehicle(Person mainOwner, String model, String brand) {
         setModel(model);
